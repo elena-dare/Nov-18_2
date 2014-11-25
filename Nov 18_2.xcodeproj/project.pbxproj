@@ -13,6 +13,10 @@
 		79A7A6AA1A228FA400EAA3C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A7A6A91A228FA400EAA3C5 /* Images.xcassets */; };
 		79A7A6AD1A228FA400EAA3C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A7A6AB1A228FA400EAA3C5 /* LaunchScreen.xib */; };
 		79A7A6B91A228FA400EAA3C5 /* Nov_18_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A7A6B81A228FA400EAA3C5 /* Nov_18_2Tests.swift */; };
+		79A7A6C31A228FB800EAA3C5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A7A6C21A228FB800EAA3C5 /* View.swift */; };
+		79A7A6C51A228FDA00EAA3C5 /* FishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A7A6C41A228FDA00EAA3C5 /* FishView.swift */; };
+		79A7A6C71A228FEA00EAA3C5 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A7A6C61A228FEA00EAA3C5 /* TextView.swift */; };
+		79A7A6CB1A22B49400EAA3C5 /* Sea.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79A7A6CA1A22B49400EAA3C5 /* Sea.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		79A7A6B21A228FA400EAA3C5 /* Nov 18_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nov 18_2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A7A6B71A228FA400EAA3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79A7A6B81A228FA400EAA3C5 /* Nov_18_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nov_18_2Tests.swift; sourceTree = "<group>"; };
+		79A7A6C21A228FB800EAA3C5 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		79A7A6C41A228FDA00EAA3C5 /* FishView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishView.swift; sourceTree = "<group>"; };
+		79A7A6C61A228FEA00EAA3C5 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		79A7A6CA1A22B49400EAA3C5 /* Sea.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sea.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,9 @@
 			children = (
 				79A7A6A21A228FA400EAA3C5 /* AppDelegate.swift */,
 				79A7A6A41A228FA400EAA3C5 /* ViewController.swift */,
+				79A7A6C21A228FB800EAA3C5 /* View.swift */,
+				79A7A6C41A228FDA00EAA3C5 /* FishView.swift */,
+				79A7A6C61A228FEA00EAA3C5 /* TextView.swift */,
 				79A7A6A61A228FA400EAA3C5 /* Main.storyboard */,
 				79A7A6A91A228FA400EAA3C5 /* Images.xcassets */,
 				79A7A6AB1A228FA400EAA3C5 /* LaunchScreen.xib */,
@@ -90,6 +101,7 @@
 		79A7A6A01A228FA400EAA3C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				79A7A6CA1A22B49400EAA3C5 /* Sea.mp3 */,
 				79A7A6A11A228FA400EAA3C5 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,6 +206,7 @@
 			files = (
 				79A7A6A81A228FA400EAA3C5 /* Main.storyboard in Resources */,
 				79A7A6AD1A228FA400EAA3C5 /* LaunchScreen.xib in Resources */,
+				79A7A6CB1A22B49400EAA3C5 /* Sea.mp3 in Resources */,
 				79A7A6AA1A228FA400EAA3C5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +227,9 @@
 			files = (
 				79A7A6A51A228FA400EAA3C5 /* ViewController.swift in Sources */,
 				79A7A6A31A228FA400EAA3C5 /* AppDelegate.swift in Sources */,
+				79A7A6C51A228FDA00EAA3C5 /* FishView.swift in Sources */,
+				79A7A6C31A228FB800EAA3C5 /* View.swift in Sources */,
+				79A7A6C71A228FEA00EAA3C5 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
