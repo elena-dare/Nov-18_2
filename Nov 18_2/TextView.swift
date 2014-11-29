@@ -8,14 +8,73 @@
 
 import UIKit
 
-class TextView: UIView {
+class TextView: UITextView {
 	
 	override init() {
-		super.init(frame: CGRectZero);
-		//If the superview of this LittleView1 changes size,
-		//make this LittleView1 change size with it.
+		super.init(frame: CGRectZero, textContainer: nil);
+		//If the superview of this TextView changes size,
+		//make this TextView change size with it.
 		autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight;
 		backgroundColor = UIColor.whiteColor();
+		
+		//If this view is touched, do not pop up a keyboard.
+		editable = false;
+		
+		//If this view is touched, do not let this view react to the touch.
+		//This view's superview object (i.e., the View in View.swift)
+		//will be the one that reacts to the touch.
+		userInteractionEnabled = false;
+		
+		textColor = UIColor.blackColor();
+		font = UIFont(name: "Times New Roman", size: 16);
+		
+		text =
+		
+			"\n" +
+			"\n" +
+			
+			"\t Somewhere beyond the sea \n" +
+			"\t somewhere waiting for me \n" +
+			"\t my lover stands on golden sands \n" +
+			"\t and watches the ships that go sailin' \n" +
+			
+			"\t Somewhere beyond the sea \n" +
+			"\t she's there watching for me \n" +
+			"\t If I could fly like birds on high \n" +
+			"\t then straight to her arms\n" +
+			"\t I'd go sailin' \n" +
+			
+			"\t It's far beyond the stars \n" +
+			"\t it's near beyond the moon \n" +
+			"\t I know beyond a doubt \n" +
+			"\t my heart will lead me there soon \n" +
+			
+			"\t We'll meet beyond the shore \n" +
+			"\t we'll kiss just as before \n" +
+			"\t Happy we'll feel beyond the sea \n" +
+			"\t and never again I'll go sailin' \n" +
+			
+			"\t I know beyond a doubt \n" +
+			"\t my heart will lead me there soon \n" +
+			"\t We'll meet (I know we'll meet) beyond the shore \n" +
+			"\t We'll kiss just like before \n" +
+			"\t Happy we'll be beyond the sea \n" +
+			"\t and never again I'll go sailin' \n" +
+			
+			"\t no more sailin' \n" +
+			"\t so long sailin' \n" +
+			"\t bye bye sailin'... \n" +
+			"\t move on out captain \n" +
+			
+			"\n" +
+			"\n" +
+			
+		"\t Frank Sinatra - Somewhere beyond the sea";
+		
+		
+		
+		
+		
 	}
 	
 	required init(coder aDecoder: NSCoder) {
@@ -37,61 +96,6 @@ class TextView: UIView {
 		let newpoint: CGPoint = CGPointMake(0, 0);
 		
 		image!.drawAtPoint(newpoint);
-		
-		let font: UIFont = UIFont.systemFontOfSize(14);
-		let attributes: [NSObject: AnyObject] = [NSFontAttributeName: font]; //a dictionary
-		
-		let screen: UIScreen = UIScreen.mainScreen();
-		let applicationFrame: CGRect = screen.applicationFrame;
-		let point: CGPoint = applicationFrame.origin;
-		
-		let s: String =
-		
-		"\n" +
-		"\n" +
-		
-		"\t Somewhere beyond the sea \n" +
-		"\t somewhere waiting for me \n" +
-		"\t my lover stands on golden sands \n" +
-		"\t and watches the ships that go sailin' \n" +
-		
-		"\t Somewhere beyond the sea \n" +
-		"\t she's there watching for me \n" +
-		"\t If I could fly like birds on high \n" +
-		"\t then straight to her arms\n" +
-		"\t I'd go sailin' \n" +
-		
-		"\t It's far beyond the stars \n" +
-		"\t it's near beyond the moon \n" +
-		"\t I know beyond a doubt \n" +
-		"\t my heart will lead me there soon \n" +
-		
-		"\t We'll meet beyond the shore \n" +
-		"\t we'll kiss just as before \n" +
-		"\t Happy we'll feel beyond the sea \n" +
-		"\t and never again I'll go sailin' \n" +
-		
-		"\t I know beyond a doubt \n" +
-		"\t my heart will lead me there soon \n" +
-		"\t We'll meet (I know we'll meet) beyond the shore \n" +
-		"\t We'll kiss just like before \n" +
-		"\t Happy we'll be beyond the sea \n" +
-		"\t and never again I'll go sailin' \n" +
-		
-		"\t no more sailin' \n" +
-		"\t so long sailin' \n" +
-		"\t bye bye sailin'... \n" +
-		"\t move on out captain \n" +
-		
-		"\n" +
-		"\n" +
-		
-		"\t Frank Sinatra - Somewhere beyond the sea";
-	
-		
-		s.drawAtPoint(point, withAttributes: attributes);
-		
-
 	}
 	
 }
