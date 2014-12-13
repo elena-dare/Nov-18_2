@@ -62,20 +62,20 @@ class FishView: UIView {
 			let options = UIViewAnimationOptions.CurveLinear | UIViewAnimationOptions.Repeat
 			
 			// random numbers for the fish size
-			let fmin = 60
-			let fmax = 100
+			let fmin = Int (bounds.size.width * 60/375)
+			let fmax = Int (bounds.size.width * 100/375)
 			let fsize: CGFloat = CGFloat( (arc4random() % (fmax - fmin + 1)) + fmin );
-			//let size : CGFloat = CGFloat( Int(rand()) %  40 + 20.0)
+			
 			
 			//random numbers for the fish y position
-			let ymin = 20
-			let ymax = 500
+			let ymin = Int (bounds.size.height * 20/667)
+			let ymax = Int (bounds.size.height * 500/667)
 			let yposition: CGFloat = CGFloat( (arc4random() % (ymax - ymin + 1)) + ymin );
-			//let yposition : CGFloat = CGFloat( Int(rand()) %  200 + 20.0)
+		
 			
 			//random numbers for the fish x position
-			let xmin = 100
-			let xmax = 1000
+			let xmin = Int (bounds.size.width * 100/375)
+			let xmax = Int (bounds.size.width * 1000/375)
 			let xrandom: CGFloat = CGFloat( (arc4random() % (xmax - xmin + 1)) + xmin );
 			
 			let xposition: CGFloat = -xrandom;

@@ -26,7 +26,7 @@ class TextView: UITextView {
 		userInteractionEnabled = false;
 		
 		textColor = UIColor.blackColor();
-		font = UIFont(name: "Times New Roman", size: 16);
+		font = UIFont(name: "Helvetica", size: 14);
 		
 		text =
 		
